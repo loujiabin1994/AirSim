@@ -72,7 +72,7 @@ public:
     virtual bool isRecording() const override;
 
     virtual void setWind(const Vector3r& wind) const override;
-    virtual bool createVoxelGrid(const Vector3r& position, const int& x_size, const int& y_size, const int& z_size, const float& res, const std::string& output_file) override;
+    virtual std::vector<std::vector<int> > createVoxelGrid(const Vector3r& position, const int& x_size, const int& y_size, const int& z_size, const float& res, const std::string& output_file) override;
     virtual std::vector<std::string> listVehicles() const override;
 
     virtual std::string getSettingsString() const override;
